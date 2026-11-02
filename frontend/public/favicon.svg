@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background Gradient (Deep Obsidian) -->
+    <linearGradient id="resolveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151A14"/>
+      <stop offset="100%" stop-color="#080A08"/>
+    </linearGradient>
+
+    <!-- Vibrant Neon Lime Gradient -->
+    <linearGradient id="neonLime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BBFF45"/>
+      <stop offset="100%" stop-color="#A7FE08"/>
+    </linearGradient>
+
+    <!-- Secondary Forest Chat Bubble Gradient -->
+    <linearGradient id="forestBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2418"/>
+      <stop offset="100%" stop-color="#10160F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Squircle with Dark Obsidian & Border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#resolveBg)" stroke="#30382C" stroke-width="1.5"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="14.5" fill="none" stroke="#A7FE08" stroke-opacity="0.14" stroke-width="0.75"/>
+
+  <!-- Secondary Chat Bubble (Back) -->
+  <path d="M25 14H46C49.314 14 52 16.686 52 20V31C52 34.314 49.314 37 46 37H43L48 43V37H46C43.5 37 25 37 25 37C21.686 37 19 34.314 19 31V20C19 16.686 21.686 14 25 14Z" fill="url(#forestBubble)" stroke="#30382C" stroke-width="1.2"/>
+  <circle cx="41" cy="23" r="1.6" fill="#A7FE08" fill-opacity="0.75"/>
+  <circle cx="46" cy="23" r="1.6" fill="#A7FE08" fill-opacity="0.75"/>
+
+  <!-- Primary Voice AI Chat Bubble (Front) in Electric Neon Lime -->
+  <path d="M12 28C12 24.686 14.686 22 18 22H38C41.314 22 44 24.686 44 28V38C44 41.314 41.314 44 38 44H22L13 51V44H18C14.686 44 12 41.314 12 38V28Z" fill="url(#neonLime)"/>
+
+  <!-- AI Voice Waveform Bars inside Neon Bubble -->
+  <rect x="19" y="30" width="3" height="6" rx="1.5" fill="#10130A"/>
+  <rect x="24" y="26.5" width="3" height="13" rx="1.5" fill="#10130A"/>
+  <rect x="29" y="27.5" width="3" height="11" rx="1.5" fill="#10130A"/>
+  <rect x="34" y="29.5" width="3" height="7" rx="1.5" fill="#10130A"/>
+
+  <!-- AI Sparkle Star (Top Right) -->
+  <path d="M52 6L53.4 9.8L57.2 11.2L53.4 12.6L52 16.4L50.6 12.6L46.8 11.2L50.6 9.8Z" fill="#BBFF45"/>
+  <circle cx="14" cy="15" r="1.2" fill="#A7FE08" fill-opacity="0.45"/>
+</svg>

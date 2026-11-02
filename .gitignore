@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.*
+.env.local
+.env.production
+**/.env
+**/.env.*
+frontend_backup/
+
+# Database
+*.db
+*.sqlite3
+
+# Models / ML
+*.pkl
+*.index
+*.bin
+*.pt
+*.onnx
+models/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+frontend/dist/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Alembic
+alembic/versions/__pycache__/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Generated
+backend/knowledge/index/
+
+# Scratch & local benchmarking scripts
+scratch/
+scratch_*.py
+scratch_*.json
+*.scratch.*
+cached_openers/
+/test_*.py
+backend/test_*.py
+backend/scripts/test_*.py
+!backend/tests/
+!backend/tests/**
+backend/tests/**/__pycache__/
+backend/data/audio/
+backend/data/
+
+# Audit snapshots & exports
+audit/
+*.bak
+tree_dump.txt
+
+# Academic submission documents (personal student identifiers)
+*.docx
+ResolveAI_Project_Report_*
+
+# Frontend server/nitro outputs
+.output/
+.nitro/
+.wrangler/
+
+

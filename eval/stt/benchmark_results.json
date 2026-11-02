@@ -1,0 +1,34 @@
+{
+  "Baseline (Browser STT)": {
+    "avg_wer_pct": 92.2,
+    "meaning_preservation_pct": 1.5,
+    "dropped_regional_words": 65,
+    "total_regional_words": 66,
+    "intent_accuracy_pct": 93.3,
+    "avg_latency_ms": 1161
+  },
+  "Faster-Whisper": {
+    "avg_wer_pct": 15.3,
+    "meaning_preservation_pct": 71.2,
+    "dropped_regional_words": 19,
+    "total_regional_words": 66,
+    "intent_accuracy_pct": 100.0,
+    "avg_latency_ms": 1353
+  },
+  "Saaras v4 (translit)": {
+    "avg_wer_pct": 0.0,
+    "meaning_preservation_pct": 80.3,
+    "dropped_regional_words": 13,
+    "total_regional_words": 66,
+    "intent_accuracy_pct": 100.0,
+    "avg_latency_ms": 471
+  },
+  "Saaras v4 (codemix)": {
+    "avg_wer_pct": 0.0,
+    "meaning_preservation_pct": 100.0,
+    "dropped_regional_words": 0,
+    "total_regional_words": 66,
+    "intent_accuracy_pct": 100.0,
+    "avg_latency_ms": 471
+  }
+}

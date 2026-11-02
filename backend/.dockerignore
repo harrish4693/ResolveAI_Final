@@ -1,0 +1,22 @@
+# Backend specific dockerignore
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+resolveai.db
+data/audio/
+tests/__pycache__/
+alembic/versions/__pycache__/
+*.log
+

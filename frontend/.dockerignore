@@ -1,0 +1,13 @@
+# Frontend specific dockerignore
+node_modules/
+npm-debug.log*
+dist/
+.output/
+.nitro/
+.wrangler/
+.git/
+.env
+.env.*
+!.env.example
+*.log
+

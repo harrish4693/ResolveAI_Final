@@ -1,0 +1,31 @@
+id,filename,language,script,reference_transcript,intent,entities
+1,utt_01_tanglish_refund.wav,tanglish,latin,enaku refund pannanum,REFUND_REQUEST,{}
+2,utt_02_tanglish_payment.wav,tanglish,latin,kaasu thiruppi varala account ku,PAYMENT_ISSUE,{"destination":"account"}
+3,utt_03_tanglish_order.wav,tanglish,latin,order eppo varum tracking id theriyala,ORDER_STATUS,{}
+4,utt_04_tanglish_lang_switch.wav,tanglish,latin,I wish to continue in Tanglish,LANGUAGE_SWITCH,{"target_language":"tanglish"}
+5,utt_05_tanglish_lang_switch2.wav,tanglish,latin,Tanglish-la pesalam enaku easy,LANGUAGE_SWITCH,{"target_language":"tanglish"}
+6,utt_06_tanglish_supervisor.wav,tanglish,latin,supervisor kitta pesanum bro urgent,ESCALATE,{"target":"supervisor"}
+7,utt_07_tanglish_fraud.wav,tanglish,latin,account hack aayiduchu unauthorized debit fraud,FRAUD_REPORT,{"type":"unauthorized_debit"}
+8,utt_08_tanglish_cancel.wav,tanglish,latin,intha item ah cancel panna mudiyuma,CANCEL_ORDER,{}
+9,utt_09_tanglish_damaged.wav,tanglish,latin,product damage aagi vandhirukku replacement venum,RETURN_EXCHANGE,{"issue":"damaged"}
+10,utt_10_tanglish_address.wav,tanglish,latin,delivery address mathanum eppadi pannanum,UPDATE_ADDRESS,{}
+11,utt_11_tamil_order.wav,tamil,tamil,என் ஆர்டர் எங்கே இருக்கிறது,ORDER_STATUS,{}
+12,utt_12_tamil_refund.wav,tamil,tamil,பணம் இன்னும் திருப்பி வரவில்லை,REFUND_REQUEST,{}
+13,utt_13_tamil_supervisor.wav,tamil,tamil,மேற்பார்வையாளரிடம் பேச வேண்டும்,ESCALATE,{"target":"supervisor"}
+14,utt_14_tamil_fraud.wav,tamil,tamil,கணக்கு மோசடி செய்யப்பட்டுள்ளது,FRAUD_REPORT,{"type":"account_fraud"}
+15,utt_15_tamil_switch.wav,tamil,tamil,தமிழ்ல பேசுங்க எனக்கு அதுதான் புரியும்,LANGUAGE_SWITCH,{"target_language":"tamil"}
+16,utt_16_tamil_cancel.wav,tamil,tamil,என் ஆர்டரை ரத்து செய்ய வேண்டும்,CANCEL_ORDER,{}
+17,utt_17_hindi_refund.wav,hindi,devanagari,मेरा रिफंड अभी तक नहीं आया,REFUND_REQUEST,{}
+18,utt_18_hindi_order.wav,hindi,devanagari,मेरा ऑर्डर कब डिलीवर होगा,ORDER_STATUS,{}
+19,utt_19_hindi_supervisor.wav,hindi,devanagari,मुझे सुपरवाइजर से बात करनी है,ESCALATE,{"target":"supervisor"}
+20,utt_20_hindi_fraud.wav,hindi,devanagari,खाता हैक हो गया है धोखाधड़ी हुई है,FRAUD_REPORT,{"type":"account_fraud"}
+21,utt_21_hindi_switch.wav,hindi,devanagari,हिन्दी में बात करो भाई,LANGUAGE_SWITCH,{"target_language":"hindi"}
+22,utt_22_hinglish_refund.wav,hinglish,latin,mera paisa kat gaya refund kab aayega,REFUND_REQUEST,{}
+23,utt_23_hinglish_order.wav,hinglish,latin,order abhi tak deliver nahi hua tracking batao,ORDER_STATUS,{}
+24,utt_24_hinglish_supervisor.wav,hinglish,latin,senior se baat karao please fast,ESCALATE,{"target":"supervisor"}
+25,utt_25_hinglish_fraud.wav,hinglish,latin,account hack ho gaya scam unauthorized,FRAUD_REPORT,{"type":"unauthorized_debit"}
+26,utt_26_hinglish_switch.wav,hinglish,latin,Hinglish mein baat karte hain,LANGUAGE_SWITCH,{"target_language":"hinglish"}
+27,utt_27_english_order.wav,english,latin,Where is my package and delivery tracking,ORDER_STATUS,{}
+28,utt_28_english_refund.wav,english,latin,I want my refund of five hundred rupees,REFUND_REQUEST,{"amount":"500"}
+29,utt_29_english_supervisor.wav,english,latin,Connect me with a human supervisor right now,ESCALATE,{"target":"supervisor"}
+30,utt_30_english_fraud.wav,english,latin,Unauthorized transaction reported on my debit card,FRAUD_REPORT,{"type":"unauthorized_debit"}

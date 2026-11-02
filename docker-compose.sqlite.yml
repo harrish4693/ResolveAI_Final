@@ -1,0 +1,57 @@
+# ResolveAI V2 — SQLite Development & Lightweight Compose Configuration
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: resolveaiv2-backend-sqlite
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///app/data/resolveai.db
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-dev_insecure_secret_key_change_in_production}
+      - ENVIRONMENT=development
+    volumes:
+      - sqlite_data:/app/data
+      - audio_data:/app/data/audio
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health/live"]
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    networks:
+      - resolveai_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: resolveaiv2-frontend-sqlite
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "80:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8080/healthz"]
+      interval: 10s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+    networks:
+      - resolveai_net
+
+volumes:
+  sqlite_data:
+  audio_data:
+
+networks:
+  resolveai_net:
+    driver: bridge
+

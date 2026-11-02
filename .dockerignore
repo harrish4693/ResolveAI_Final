@@ -1,0 +1,59 @@
+# Git and development directories
+.git/
+.github/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Virtual environments and dependencies
+.venv/
+venv/
+env/
+ENV/
+node_modules/
+npm-debug.log*
+
+# Environment files and credentials (CRITICAL)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Database files and persistent state
+*.db
+*.sqlite
+*.sqlite3
+backend/resolveai.db
+
+# Build outputs and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.output/
+.nitro/
+.wrangler/
+frontend/.output/
+frontend/dist/
+
+# Audit, dataset dumps, and private reports
+audit/
+tree_dump.txt
+*.docx
+*.bak
+ResolveAI_Project_Report_*
+
+# Media and audio uploads
+backend/data/audio/
+audio/
+backend/knowledge/index/
+

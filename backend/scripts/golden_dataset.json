@@ -1,0 +1,562 @@
+[
+  {
+    "id": "P1",
+    "input": "I paid for the pro plan but money was deducted twice.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "P2",
+    "input": "Check my transaction TXN12345",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "check_transaction",
+      "grounding": true
+    }
+  },
+  {
+    "id": "P3",
+    "input": "என் பணம் ரெண்டு தடவை எடுக்கப்பட்டுவிட்டது",
+    "context": {},
+    "expected": {
+      "language": "ta",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "P4",
+    "input": "ennoda kaasu rendatti eduthutanga",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "P5",
+    "input": "मेरा पैसा कट गया",
+    "context": {},
+    "expected": {
+      "language": "hi",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "P6",
+    "input": "mera paisa double deduct ho gaya",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "S1",
+    "input": "Someone hacked into my account from Russia!",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "S2",
+    "input": "My phone was stolen, block my account.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "S3",
+    "input": "என் அக்கவுண்ட் ஹேக் ஆகிடுச்சு",
+    "context": {},
+    "expected": {
+      "language": "ta",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "S4",
+    "input": "account hack aayiduchu bro",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "S5",
+    "input": "kisi ne mera account hack kar liya",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "L1",
+    "input": "I forgot my password.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "L2",
+    "input": "My account is locked after too many attempts.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "L3",
+    "input": "password maranthuten",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "L4",
+    "input": "password yaad nahi",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "D1",
+    "input": "When will order ORD55555 be delivered?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "D2",
+    "input": "order is late",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "D3",
+    "input": "order deliver aagala",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "R1",
+    "input": "I want a refund for TXN99999",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "R2",
+    "input": "check refund status for TXN11111",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "R3",
+    "input": "refund venum for TXN12345",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "U1",
+    "input": "Can I update my phone number?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "UPDATE_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "update_customer_details"
+    }
+  },
+  {
+    "id": "U2",
+    "input": "phone number change pannanum",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "UPDATE_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "update_customer_details"
+    }
+  },
+  {
+    "id": "M1",
+    "input": "What about my other transaction TXN88888?",
+    "context": {
+      "previous_analysis": {
+        "intent": "PAYMENT_ISSUE"
+      }
+    },
+    "expected": {
+      "language": "en",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "check_transaction",
+      "grounding": true
+    }
+  },
+  {
+    "id": "G1",
+    "input": "What are your business hours?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "GENERAL_QUERY",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "G2",
+    "input": "How do I upgrade to the enterprise plan?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "GENERAL_QUERY",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "V0",
+    "input": "I was charged twice.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "V1",
+    "input": "My card was deducted wrongly.",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "V2",
+    "input": "Kaasu rendu thadava poiruchu",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "V3",
+    "input": "paisa double kat gaya",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "PAYMENT_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "V4",
+    "input": "Someone is accessing my account!",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "V5",
+    "input": "Account hack aagiduchu nu nenaikran",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "V6",
+    "input": "How to change password?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "V7",
+    "input": "password reset pannunga",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "V8",
+    "input": "Where is my delivery for ORD12345?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "V9",
+    "input": "delivery late aaguthu",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "V10",
+    "input": "I need my money back for TXN23456",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "V11",
+    "input": "Update address details",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "UPDATE_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "update_customer_details",
+      "grounding": true
+    }
+  },
+  {
+    "id": "V12",
+    "input": "How do I contact support?",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "GENERAL_QUERY",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "V13",
+    "input": "Support number enna?",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "GENERAL_QUERY",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "X0",
+    "input": "can't login to my account",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "X1",
+    "input": "unauthorized transaction TXN98765",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "X2",
+    "input": "return my item ORD11111",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "REFUND_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "X3",
+    "input": "return my money for TXN11111",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "X4",
+    "input": "update my email",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "UPDATE_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "update_customer_details",
+      "grounding": true
+    }
+  },
+  {
+    "id": "X5",
+    "input": "change my phone number",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "UPDATE_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "update_customer_details",
+      "grounding": true
+    }
+  },
+  {
+    "id": "X6",
+    "input": "delivery hasn't arrived",
+    "context": {},
+    "expected": {
+      "language": "en",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "ASK_USER"
+    }
+  },
+  {
+    "id": "X7",
+    "input": "mera account locked hai",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "X8",
+    "input": "paisa wapas chahiye for TXN00000",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "X9",
+    "input": "panam thirumba venum for TXN00000",
+    "context": {},
+    "expected": {
+      "language": "tanglish",
+      "intent": "REFUND_ISSUE",
+      "decision": "USE_TOOL",
+      "tool": "create_refund_request",
+      "grounding": true
+    }
+  },
+  {
+    "id": "X10",
+    "input": "order track karo ORD00000",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "DELIVERY_ISSUE",
+      "decision": "RESOLVE"
+    }
+  },
+  {
+    "id": "X11",
+    "input": "hack kardiya mera account",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "SECURITY_ISSUE",
+      "decision": "ESCALATE"
+    }
+  },
+  {
+    "id": "X12",
+    "input": "password bhool gaya",
+    "context": {},
+    "expected": {
+      "language": "hinglish",
+      "intent": "LOGIN_ISSUE",
+      "decision": "RESOLVE"
+    }
+  }
+]
