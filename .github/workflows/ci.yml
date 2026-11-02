@@ -27,6 +27,7 @@ jobs:
       DATABASE_URL: sqlite+aiosqlite:///./test.db
       APP_ENV: testing
       DEBUG: "true"
+      PYTHONPATH: .
 
     steps:
       - name: Check out repository
@@ -52,7 +53,7 @@ jobs:
       - name: Run Pytest test suite
         working-directory: backend
         run: |
-          pytest -v --tb=short
+          python -m pytest -v --tb=short
 
   frontend-test:
     name: Frontend Lint, Test & Build
