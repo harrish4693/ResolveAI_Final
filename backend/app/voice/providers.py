@@ -312,7 +312,7 @@ def get_stt_provider(provider_type: str | None = None) -> STTProvider:
         )
     elif ptype == "whisper":
         return FasterWhisperSTTProvider()
-    elif ptype in ("stub", "browser", "test"):
+    elif ptype in ("stub", "browser", "test", "mock"):
         return StubSTTProvider()
     raise ValueError(f"Unknown STT provider '{ptype}'. Available: sarvam, whisper, browser, stub.")
 
@@ -323,7 +323,7 @@ def get_tts_provider(provider_type: str | None = None) -> TTSProvider:
     ptype = (provider_type or settings.tts_provider or "stub").lower()
     if ptype in ("local", "offline", "edge"):
         return LocalTTSProvider()
-    elif ptype in ("stub", "browser", "test"):
+    elif ptype in ("stub", "browser", "test", "mock"):
         return StubTTSProvider()
     raise ValueError(f"Unknown TTS provider '{ptype}'. Available: local, browser, stub.")
 
