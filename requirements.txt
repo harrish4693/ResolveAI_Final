@@ -30,11 +30,15 @@ asyncpg>=0.29.0
 
 # LLM Providers & Resiliency
 openai>=1.40.0
+google-genai>=2.0.0
 tenacity>=8.0.0
 
 # Vector Search
 faiss-cpu>=1.7.0
 tiktoken>=0.7.0
 
-# Real-time Voice Transport (LiveKit)
+# Real-time Voice Transport (LiveKit) & Auth Providers
 livekit-api>=1.2.0
+PyJWT>=2.8.0
+google-auth>=2.27.0
+

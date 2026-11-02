@@ -1,6 +1,6 @@
 # Multi-stage production build for ResolveAI V2 Frontend
 # Stage 1: Build TanStack Start SSR application
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ ENV NITRO_PRESET=node-server
 RUN npm run build
 
 # Stage 2: Production runtime with SSR and rootless Nginx reverse proxy
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
